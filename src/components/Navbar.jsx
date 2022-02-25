@@ -8,7 +8,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  height: 60px;
+  height: 65px;
 `;
 
 const Wrapper = styled.div`
@@ -26,6 +26,7 @@ const Left = styled.div`
 
 const Logo = styled.h1`
   font-weight: bold;
+  font-size: 35px;
 `;
 
 const Language = styled.span`
@@ -81,8 +82,7 @@ const Navbar = () => {
         <Right>
           <MenuItem>Register</MenuItem>
           <MenuItem>Signin</MenuItem>
-          <MenuItem>YOUR CART</MenuItem>
-          <MenuItem style={{ marginLeft: "5px" }}>
+          <MenuItem>
             <Badge badgeContent={4} color="primary">
               <ShoppingCartOutlined color="action" />
             </Badge>

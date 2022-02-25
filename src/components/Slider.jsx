@@ -32,19 +32,27 @@ const Wrapper = styled.div`
   height: 100%;
 `;
 const Slide = styled.div`
-  // witdth: 100vw;
-  // height: 100vh;
+  witdth: 100vw;
+  height: 100vh;
   position: relative;
 `;
 const ImgContainer = styled.div`
-  // witdth: 100vh;
-  // height: 100vh;
+  witdth: 100vh;
+  height: 100vh;
 `;
+
+const Img = styled.img`
+  width: 100vw;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+`;
+
 const InfoContainer = styled.div`
   color: white;
   position: absolute;
-  top: 350px;
-  left: 680px;
+  top: 40%;
+  left: 35%;
 `;
 
 const Title = styled.h1`
@@ -90,8 +98,7 @@ const Slider = () => {
       <Wrapper>
         <Slide>
           <ImgContainer>
-            <img
-              style={{ height: "100vh", width: "auto" }}
+            <Img
               src="https://www.ovsfashion.com/on/demandware.static/-/Sites/default/dwf894888e/08022022/HP-SALDI-DSK-TAGLI_01_1766.00567ac4.webp"
               alt=""
             />
